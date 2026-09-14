@@ -22,9 +22,9 @@ then
 	exit 1
 fi
 
-numfiles=$(find "$filesdir" -type f | wc -1)
+numfiles=$(find "$filesdir" -type f | wc -l)
 
-nummatches=$(grep -r "$searchstr" "$filesdir" | wc -1)
+nummatches=$(grep -r "$searchstr" "$filesdir" | wc -l)
 
-echo "the number of files are $numfiles and the number of matching lines are $nummatches"
+echo "The number of files are $numfiles and the number of matching lines are $nummatches"
 
