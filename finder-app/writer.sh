@@ -26,6 +26,3 @@ then
 	echo "Could not create file"
 	exit 1
 fi
-
-echo "the number of files are $numfiles and the number of matching lines are $nummatches"
-
